@@ -1,4 +1,4 @@
-# UDP Swarm Telemetry Bridge
+# FleetPulse: UAV Telemetry Bridge
 
 A reproducible six-UAV telemetry example built around asyncio UDP datagrams. The demo models periodic state reports, packet loss, sequence numbers, and a ground-station aggregator.
 
@@ -18,6 +18,10 @@ The demo uses loopback UDP ports `15000-15005`, so it runs without flight hardwa
 - The loss model is explicit and reproducible with `--seed`.
 
 This is a software-in-the-loop communication example. It does not claim to be a flight-control or safety-certified protocol.
+
+![Telemetry result](results/telemetry_summary.png)
+
+The figure summarizes packet delivery from a representative six-agent run.
 
 ## License
 
